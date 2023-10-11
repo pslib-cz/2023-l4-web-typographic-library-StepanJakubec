@@ -1,12 +1,29 @@
 
 
+:root {
+    --white: #fff;
+    --black: #000;
+    --gray: #484848;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
 .main-header{
-    padding: 0px 75px;
+    padding: 20px 75px;
     background-color: black;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 }
 
 .navbar{
@@ -15,34 +32,16 @@
     align-items: center;
 }
 
-.navbar__menu{
-    display: flex;
-    list-style: none;
-}
-
-.navbar__menu > li > a{
-    color: white;
-    margin-left: 25px;
-    font-weight: 400;
-    font-size: 20px;
-    text-decoration: none;
-
-}
-
-.navbar__menu > li > a:hover{
-    color: white;
-    margin-left: 25px;
-    font-weight: 400;
-    font-size: 20px;
-    text-decoration: underline;
-
-}
 
 .navbar__title > a {
     text-decoration: none;
     font-size: 40px;
     color: white;
     font-weight: 500;
+}
+
+section{
+    margin-bottom: 70px;
 }
 
 .first{
@@ -63,4 +62,81 @@
 
 section{
     padding: 0px 60px 0px;
+}
+
+footer{
+    background-color: black;
+}
+
+@media (max-width: 1000px){
+    .navbar__menu{
+        display: none;
+    }
+}
+
+@media (min-width: 1000px){
+
+ 
+.navbar__menu{
+    display: flex;
+    list-style: none;
+}
+
+.navbar__menu > ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__menu  li  a{
+    color: white;
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.navbar__menu  li  a:hover{
+    color: white;
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+}
+
+.navbar__list{
+    transform: translateX(1000px);
+    transition: 0.35s;
+    position: absolute;
+    background-color: var(--gray);
+    list-style-type: none;
+    left: 0;
+    right: 0;
+    top: 5em;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar__list.active{
+   transform: translateX(0);
+   transition: 00.35s;
+}
+
+.navbar__list li {
+    padding-bottom: 8px;
+    border-bottom: rgb(0, 0, 0) 5px solid;
+    padding: 15px;
+
+}
+
+.navbar__list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.ending{
+    background-color: var(--black);
+    color: var(--gray);
 }

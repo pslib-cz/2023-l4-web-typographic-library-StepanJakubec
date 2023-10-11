@@ -1,0 +1,63 @@
+.hamburger {
+    --rotate-time: .15s;
+    --move-time: .1s;
+}
+
+.hamburger {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    top: 30%;
+}
+  
+.hamburger span {
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 4.5px;
+    left: 0;
+}
+
+.hamburger span:nth-child(1) { top: 0px; 
+    transition: 0.2s;}
+  
+.hamburger span:nth-child(2) { top: 18px;
+    transition: 0.5s;}
+  
+.hamburger span:nth-child(3) { bottom: 0px; 
+    transition: 0.2s;}
+
+@media screen and (max-width: 1000px) { 
+   
+
+    .hamburger.active span:nth-child(1){
+        transform: rotateZ(45deg);
+        transition: 0.2s;
+        top: 18px;
+    }
+
+    .hamburger.active span:nth-child(2){
+        transform: translate(100px);
+        transition: 0.5s 0.2s;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .hamburger.active span:nth-child(3){
+        transform: rotateZ(-45deg);
+        transition: 0.2s;
+        top: 18px;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .hamburger-row{
+        display: none;
+    }
+
+    .navbar__list{
+        display: none;
+    }
+}

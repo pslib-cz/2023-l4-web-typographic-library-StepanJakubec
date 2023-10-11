@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="../JS/hamburger.js"></script>
     <title>Verse.CSS</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/verse.css">
+   <link rel="stylesheet" href="../css/hamburger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +19,10 @@
   <header class="main-header">
     <nav class="navbar">
         <div class="navbar__title">
-            <a href="#">Verse.css</a>
+            <a href="#">Verse.CSS</a>
         </div>
-        <ul class="navbar__menu">
+        <div class="navbar__menu">
+          <ul>
             <li><a href="#headings">Headings</a></li>
             <li><a href="#text">Text</a></li>
             <li><a href="#list">List</a></li>
@@ -28,7 +31,26 @@
             <li><a href="#buttons">Buttons</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#code">Code</a></li>
-        </ul>
+          </ul>
+        </div>
+        <div class="hamburger-row">
+          <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
+      </div>
+        <ul class="navbar__list hamburger-zone">
+          <li class="navbar--active"><a href="#headings">Headings</a></li>
+          <li><a href="#text">Text</a></li>
+          <li><a href="#list">List</a></li>
+          <li><a href="#table">Table</a></li>
+          <li><a href="#alerts">Alerts</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#code">Code</a></li>
+          
+      </ul>
     </nav>
   </header>
   <main>
@@ -57,6 +79,27 @@
           <h2>
               List
           </h2>
+          <h3>Unordered List</h3>
+          <ul>
+              <li>FF</li>
+              <li>GG</li>
+              <li>HH</li>
+              <ul>
+                  <li>FF</li>
+                  <li>GG</li>
+                  <li>HH</li>
+              </ul>
+          </ul>
+          <h3>Ordered List</h3>
+          <ol>
+              <li>FF</li>
+              <li>GG</li>
+              <li>HH</li>
+              <ol>
+                  <li>JJ</li>
+                  <li>LL</li>
+              </ol>
+          </ol>
       </section>
       <section id="table">
           <h2>Table</h2>
@@ -67,6 +110,7 @@
                   <th>2</th>
                   <th>3</th>
                   <th>4</th>
+                  <th>5</th>
                 </tr>
               </thead>
               <tbody>
@@ -75,12 +119,21 @@
                     <td>W</td>
                     <td>T</td>
                     <td>I</td>
+                    <td>K</td>
                   </tr>
                   <tr>
                     <td>A</td>
                     <td>S</td>
                     <td>D</td>
                     <td>F</td>
+                    <td>K</td>
+                  </tr>
+                  <tr>
+                    <td>A</td>
+                    <td>S</td>
+                    <td>D</td>
+                    <td>F</td>
+                    <td>K</td>
                   </tr>
               </tbody>
           </table>
@@ -90,13 +143,38 @@
       </section>
       <section id="buttons">
           <h2>Buttons</h2>
+          <a class="button" href="#">Button</a>
       </section>
       <section id="gallery">
-          <h2>Gallery</h2>
+          <h2>Images</h2>
+          <h3>Single Image</h3>
+          <figure>
+          <img class="single" src="../Images/09-Eureka-Rolando-Cyril-AquaSixio-Digital-Art-in-a-Universe-between-Surreal-and-Fantasy-www-designstack-co.jpg" alt="">
+          <figcaption class="caption">Single Image</figcaption>
+        </figure>
+          <h3>Image Gallery</h3>
+          <div class="image-gallery">
+          <figure><img class="single" src="../Images/rwow8CCG3C3GrqHGiK8qcJ.jpg" alt="">
+            <figcaption class="caption">Caption for Image 1</figcaption></figure>
+          <figure><img class="single" src="../Images/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.avif" alt="">
+            <figcaption class="caption">Caption for Image 1</figcaption></figure>
+          <figure><img class="single" src="../Images/universe.jpg" alt="">
+            <figcaption class="caption">Caption for Image 1</figcaption></figure>
+          <figure><img class="single" src="../Images/gettyimages-513298210_credit_den-belitsky.jpg" alt="">
+            <figcaption class="caption">Caption for Image 1</figcaption></figure>
+        </div>
       </section>
       <section id="code">
           <h2>Code</h2>
       </section>
   </main>
+  <footer class="ending">
+    <div class="ending__info">
+      <h2 class="ending__title">Verse.CSS</h2>
+      <p class="ending__name">Štěpán Jakubec</p>
+      <p class="ending__email">stepan.jakubec.120@pslib.cz</p>
+
+    </div>
+  </footer>
 </body>
 </html>
