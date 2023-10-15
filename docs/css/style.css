@@ -40,8 +40,15 @@ main{
     font-weight: 500;
 }
 
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section{
     margin-bottom: 70px;
+    padding: 0px 60px 0px;
 }
 
 .first{
@@ -60,10 +67,6 @@ section{
     font-weight: 500;
 }
 
-section{
-    padding: 0px 60px 0px;
-}
-
 footer{
     background-color: black;
 }
@@ -71,6 +74,10 @@ footer{
 @media (max-width: 1000px){
     .navbar__menu{
         display: none;
+    }
+
+    section{
+        padding: 0px 20px 0px;
     }
 }
 
@@ -102,8 +109,8 @@ footer{
     font-weight: 400;
     font-size: 20px;
     text-decoration: underline;
-
 }
+
 }
 
 .navbar__list{
@@ -136,7 +143,21 @@ footer{
     text-decoration: none;
 }
 
+footer{
+    padding: 1em 3em;
+}
+
 .ending{
     background-color: var(--black);
     color: var(--gray);
+}
+
+.ending__email{
+    color: #484848;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.ending__logo{
+    opacity: 20%;
 }
