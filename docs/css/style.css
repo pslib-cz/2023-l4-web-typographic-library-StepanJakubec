@@ -72,10 +72,6 @@ section{
     font-weight: 500;
 }
 
-footer{
-    background-color: black;
-}
-
 @media (max-width: 1000px){
     .navbar__menu{
         display: none;
