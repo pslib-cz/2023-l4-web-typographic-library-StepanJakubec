@@ -2,7 +2,7 @@
 
 :root {
     --white: #fff;
-    --black: #000;
+    --black: rgb(0, 0, 0);
     --gray: #484848;
 }
 
@@ -18,7 +18,7 @@ main{
 
 .main-header{
     padding: 20px 75px;
-    background-color: black;
+    background-color: rgb(65, 59, 238);
     position: fixed;
     top: 0;
     left: 0;
