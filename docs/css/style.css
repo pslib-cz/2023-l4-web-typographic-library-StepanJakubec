@@ -2,7 +2,7 @@
 
 :root {
     --white: #fff;
-    --black: rgb(0, 0, 0);
+    --blue: rgb(69, 62, 255);
     --gray: #484848;
 }
 
@@ -18,7 +18,7 @@ main{
 
 .main-header{
     padding: 20px 75px;
-    background-color: rgb(65, 59, 238);
+    background-color: rgb(69, 62, 255);
     position: fixed;
     top: 0;
     left: 0;
@@ -117,7 +117,7 @@ footer{
     transform: translateX(1000px);
     transition: 0.35s;
     position: absolute;
-    background-color: var(--gray);
+    background-color: var(--white);
     list-style-type: none;
     left: 0;
     right: 0;
@@ -133,13 +133,13 @@ footer{
 
 .navbar__list li {
     padding-bottom: 8px;
-    border-bottom: rgb(0, 0, 0) 5px solid;
+    border-bottom: var(--blue) 5px solid;
     padding: 15px;
 
 }
 
 .navbar__list li a {
-    color: white;
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -148,12 +148,12 @@ footer{
 }
 
 .ending{
-    background-color: var(--black);
+    background-color: black;
     color: var(--gray);
 }
 
 .ending__email{
-    color: #484848;
+    color: var(--gray);
     display: block;
     margin-bottom: 20px;
 }

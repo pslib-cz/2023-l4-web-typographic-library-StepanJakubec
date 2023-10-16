@@ -2,7 +2,7 @@
 
 :root {
     --white: #fff;
-    --black: #000;
+    --blue: rgb(69, 63, 226);
     --gray: #484848;
 }
 
@@ -29,11 +29,11 @@ h3, h4, h5, h6{
 
 .button{
     padding: 10px 50px;
-    background-color: black;
+    background-color: var(--blue);
     color: var(--white);
     text-decoration: none;
     border-radius: 40px;
-    border: solid 3px black;
+    border: solid 3px var(--blue);
     width: 120px;
     text-align: center;
     margin: 3em 0;
@@ -42,16 +42,16 @@ h3, h4, h5, h6{
 
 .button--hover{
     
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--blue);
 }
 
 .button:hover{
     padding: 10px 50px;
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--blue);
     border-radius: 40px;
-    border: solid 3px black;
+    border: solid 3px var(--blue);
     transition: 0.2s 0s;
 }
 
@@ -62,13 +62,13 @@ table{
 }
 
 thead{
-    background-color: black;
+    background-color: var(--blue);
     color: white;
 }
 
 th, td{
     
-    border: solid 2px #484848;
+    border: solid 2px var(--blue);
     border-collapse: collapse;
     text-align: center;
 }
