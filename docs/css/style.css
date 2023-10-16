@@ -6,6 +6,10 @@
     --gray: #484848;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }

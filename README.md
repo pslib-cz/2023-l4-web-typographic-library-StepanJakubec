@@ -29,7 +29,7 @@ Verse.css is using linked google font, which can be simply changed to yours.
 ```html
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-body{
+html {
     font-family: 'Kanit', sans-serif;
 }
 ```
