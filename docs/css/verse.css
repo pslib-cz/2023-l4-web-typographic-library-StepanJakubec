@@ -87,12 +87,12 @@ th, td{
 
 .gallery__image {
     overflow: hidden;
-    width: fit-content;
     margin: 0;
+    height: 100%;
 
 }
 
-.gallery__block:hover .gallery__caption {
+.gallery__item:hover .gallery__caption {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.3s;
@@ -108,14 +108,13 @@ th, td{
 .gallery__image img {
     transition: 0.3s;
     display: block;
-    flex: 1;
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.gallery__image a:hover img {
+.gallery__item:hover img {
     transform: scale(1.05);
     transition: 0.3s;
 }
