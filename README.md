@@ -65,6 +65,7 @@ To use image template, modify your wrapper as `<figure class="galerry__block>`
         </figure>
 }
 ```
+To create gallery use `<div class="gallery">`
 
 ## Button
 To add button, add `class="button"` to `<a>` tag
@@ -98,6 +99,43 @@ To add button, add `class="button"` to `<a>` tag
 
 ## Tables
 You can use predefined table with standart `<table>` tag.
+Use predefined table for your beggining
+```html
+<table>
+              <thead>
+                  <tr>
+                  <th>Player</th>
+                  <th>Age</th>
+                  <th>Team</th>
+                  <th>Nationality</th>
+                  <th>Goals</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>Cristiano Ronaldo</td>
+                    <td>38</td>
+                    <td>Al Nassr</td>
+                    <td>Portugal</td>
+                    <td>800+</td>
+                  </tr>
+                  <tr>
+                    <td>Lionel Messi</td>
+                    <td>36</td>
+                    <td>Inter Miami</td>
+                    <td>Argentina</td>
+                    <td>800+</td>
+                  </tr>
+                  <tr>
+                    <td>Erling Haaland</td>
+                    <td>23</td>
+                    <td>Manchester City</td>
+                    <td>Norway</td>
+                    <td>200+</td>
+                  </tr>
+              </tbody>
+          </table>
+```
 
 
 
